@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CREATE ACCOUNT</title>
+
+    <link rel="stylesheet" href="./css/styleaccount.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+<div class="container">
+
+	<div class="header">
+		<h2 id="x">Join us today!</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Username</label>
+			<input type="text" placeholder="Enter username" id="username" />
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="abc@xyz.com" id="email" />
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Enter password" id="password"/>
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Password check</label>
+			<input type="password" placeholder="Re-enter password" id="password2"/>
+			<i class="fa fa-check-circle"></i>
+			<i class="fa fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<button>Submit</button>
+    <hr>
+    <input type = "button" value = "Reset data" onClick = "fun()"/>
+    <a href="www.google.com">  GO TO HOMEPAGE</a>
+    <h6>Have a good day!</h6>
+	</form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./account.js">
+function fun(){
+  document.getElementById("form").reset();
+}
+</script>
+</body>
+</html>
